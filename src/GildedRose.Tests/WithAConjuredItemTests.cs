@@ -27,5 +27,11 @@ namespace GildedRose.Tests
 			Assert.That(item.Quality, Is.EqualTo(0));
 		}
 
+		[Test]
+		public void quality_should_not_decrease_below_0()
+		{
+			var item = new Item { Name = "Conjured Mana Cake", Quality = 1, SellIn = 1 }.UpdateQuality();
+			Assert.That(item.Quality, Is.EqualTo(0));
+		}
 	}
 }

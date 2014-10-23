@@ -84,9 +84,11 @@ namespace GildedRose.Tests
             [Test]
             public void quality_doubles_once_sell_in_is_zero()
             {
-                var item = new Item { Name = "Aged Brie", Quality = 1, SellIn = 0 }.UpdateQuality();
+	            var item = new Item {Name = "Aged Brie", Quality = 1, SellIn = 0}.UpdateQuality();
                 Assert.That(item.Quality, Is.EqualTo(3));
             }
+
+
         }
 
         [TestFixture]
