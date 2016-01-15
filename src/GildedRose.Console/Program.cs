@@ -14,7 +14,7 @@ namespace GildedRose.Console
                               Items = new List<Item>
                                           {
                                               new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
-                                              AgedBrie(),
+                                              new AgedBrie {SellIn = 2, Quality = 0},
                                               new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
                                               new Item {Name = "Sulfuras, Hand of Ragnaros", SellIn = 0, Quality = 80},
                                               new Item
@@ -32,11 +32,6 @@ namespace GildedRose.Console
 
             System.Console.ReadKey();
         }
-
-	    private static AgedBrie AgedBrie()
-	    {
-	        return new AgedBrie {Name = "Aged Brie", SellIn = 2, Quality = 0};
-	    }
 
 	    public void UpdateQuality()
         {
@@ -118,5 +113,6 @@ namespace GildedRose.Console
 
     public class AgedBrie : Item
     {
+        public string Name { get { return "Aged Brie"; } }
     }
 }
