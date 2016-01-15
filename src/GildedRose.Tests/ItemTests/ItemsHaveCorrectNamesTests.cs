@@ -1,7 +1,7 @@
 ﻿using GildedRose.Console;
 using NUnit.Framework;
 
-namespace GildedRose.Tests
+namespace GildedRose.Tests.ItemTests
 {
     [TestFixture]
     class ItemsHaveCorrectNamesTests
