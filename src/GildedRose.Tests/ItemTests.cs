@@ -7,9 +7,18 @@ namespace GildedRose.Tests
     class ItemsHaveCorrectNamesTests
     {
         [Test]
-        public void AgedBrieHasCorrectName()
+        public void AgedBrie_has_correct_name()
         {
-            Assert.That(new AgedBrie().Name, Is.EqualTo("Aged Brie"));
+            var agedBrie = new AgedBrie();
+            Assert.That(agedBrie.Name, Is.EqualTo("Aged Brie"));
+        }
+
+        [Test]
+        public void Plus5DexterityVest_has_correct_name()
+        {
+            var plus5DexterityVest = new Plus5DexterityVest();
+            Assert.That(plus5DexterityVest.Name, Is.EqualTo("+5 Dexterity Vest"));
+            
         }
     }
 }
