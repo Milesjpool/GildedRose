@@ -32,7 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AgedBrie.cs" />
+    <Compile Include="ElixirOfTheMongoose.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="Plus5DexterityVest.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

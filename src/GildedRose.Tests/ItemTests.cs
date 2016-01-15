@@ -18,7 +18,13 @@ namespace GildedRose.Tests
         {
             var plus5DexterityVest = new Plus5DexterityVest();
             Assert.That(plus5DexterityVest.Name, Is.EqualTo("+5 Dexterity Vest"));
-            
+        }
+
+        [Test]
+        public void ElixirOfTheMongoose_has_correct_name()
+        {
+            var elixirOfTheMongoose = new ElixirOfTheMongoose();
+            Assert.That(elixirOfTheMongoose.Name, Is.EqualTo("Elixir of the Mongoose"));
         }
     }
 }

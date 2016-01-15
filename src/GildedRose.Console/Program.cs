@@ -110,19 +110,4 @@ namespace GildedRose.Console
         }
 
     }
-
-    public class ElixirOfTheMongoose : Item
-    {
-        public string Name { get { return "Elixir of the Mongoose"; } }  
-    }
-
-    public class Plus5DexterityVest : Item
-    {
-        public string Name { get { return "+5 Dexterity Vest"; } }   
-    }
-
-    public class AgedBrie : Item
-    {
-        public string Name { get { return "Aged Brie"; } }
-    }
 }
