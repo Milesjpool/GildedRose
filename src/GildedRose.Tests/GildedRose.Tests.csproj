@@ -33,8 +33,10 @@
     <Reference Include="nunit.framework">
       <HintPath>..\..\packages\NUnit.2.6.3\lib\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ItemTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UpdateItemsTests\TestHelper.cs" />
     <Compile Include="UpdateItemsTests\WhenIUpdateALegendaryItem.cs" />
