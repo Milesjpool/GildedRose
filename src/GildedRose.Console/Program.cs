@@ -5,12 +5,12 @@ namespace GildedRose.Console
 	public class Program
     {
 		public IList<Item> Items;
-        static void Main(string[] args)
+        static void Main()
         {
             System.Console.WriteLine("OMGHAI!");
 
-            var app = new Program()
-                          {
+            var app = new Program
+                {
                               Items = new List<Item>
                                           {
                                               new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
@@ -31,7 +31,6 @@ namespace GildedRose.Console
             app.UpdateQuality();
 
             System.Console.ReadKey();
-
         }
 
         public void UpdateQuality()
@@ -111,14 +110,4 @@ namespace GildedRose.Console
         }
 
     }
-
-    public class Item
-    {
-        public string Name { get; set; }
-
-        public int SellIn { get; set; }
-
-        public int Quality { get; set; }
-    }
-
 }

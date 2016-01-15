@@ -36,7 +36,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdateItemsTests.cs" />
+    <Compile Include="UpdateItemsTests\TestHelper.cs" />
+    <Compile Include="UpdateItemsTests\WhenIUpdateALegendaryItem.cs" />
+    <Compile Include="UpdateItemsTests\WhenIUpdateAQualityAgedItem.cs" />
+    <Compile Include="UpdateItemsTests\WhenIUpdateAStandardItem.cs" />
+    <Compile Include="UpdateItemsTests\WhenIUpdateAnEventItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
