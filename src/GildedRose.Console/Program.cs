@@ -14,7 +14,7 @@ namespace GildedRose.Console
                               Items = new List<Item>
                                           {
                                               new Item {Name = "+5 Dexterity Vest", SellIn = 10, Quality = 20},
-                                              new Item {Name = "Aged Brie", SellIn = 2, Quality = 0},
+                                              AgedBrie(),
                                               new Item {Name = "Elixir of the Mongoose", SellIn = 5, Quality = 7},
                                               new Item {Name = "Sulfuras, Hand of Ragnaros", SellIn = 0, Quality = 80},
                                               new Item
@@ -33,7 +33,12 @@ namespace GildedRose.Console
             System.Console.ReadKey();
         }
 
-        public void UpdateQuality()
+	    private static AgedBrie AgedBrie()
+	    {
+	        return new AgedBrie {Name = "Aged Brie", SellIn = 2, Quality = 0};
+	    }
+
+	    public void UpdateQuality()
         {
             for (var i = 0; i < Items.Count; i++)
             {
@@ -109,5 +114,9 @@ namespace GildedRose.Console
             }
         }
 
+    }
+
+    public class AgedBrie : Item
+    {
     }
 }
