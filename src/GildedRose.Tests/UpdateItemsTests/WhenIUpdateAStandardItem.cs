@@ -10,37 +10,56 @@ namespace GildedRose.Tests.UpdateItemsTests
         [Test]
         public void it_should_decrement_sell_in()
         {
-            var item = new StandardItem {SellIn = 1, Quality = 1 }.UpdateItem();
+            var item = new StandardItem {SellIn = 1, Quality = 1}.UpdateItem();
             Assert.That(item.SellIn, Is.EqualTo(0));
         }
 
         [Test]
         public void it_should_decrement_quality()
         {
-            var item = new StandardItem { SellIn = 1, Quality = 1 }.UpdateItem();
+            var item = new StandardItem {SellIn = 1, Quality = 1}.UpdateItem();
             Assert.That(item.Quality, Is.EqualTo(0));
         }
 
         [Test]
         public void when_the_sell_in_has_passed_it_should_decrement_quality_twice_as_fast()
         {
-            var item = new StandardItem {  SellIn = 0, Quality = 2 }.UpdateItem();
+            var item = new StandardItem {SellIn = 0, Quality = 2}.UpdateItem();
             Assert.That(item.Quality, Is.EqualTo(0));
         }
 
         [Test]
         public void quality_should_never_be_negative()
         {
-            var item = new StandardItem { SellIn = 1, Quality = 0 }.UpdateItem();
+            var item = new StandardItem {SellIn = 1, Quality = 0}.UpdateItem();
             Assert.That(item.Quality, Is.EqualTo(0));
         }
     }
 
     public class StandardItem : Item
     {
-        public string Name
+        public override int SellIn { get; set; }
+        public override int Quality { get; set; }
+
+        public override void UpdateQuality()
         {
-            get { return "standard item"; }
+            if (Quality > 0)
+            {
+                Quality = Quality - 1;
+            }
+        }
+
+        public override void UpdateSellIn()
+        {
+            SellIn = SellIn - 1;
+
+            if (SellIn < 0)
+            {
+                if (Quality > 0)
+                {
+                    Quality = Quality - 1;
+                }
+            }
         }
     }
 }

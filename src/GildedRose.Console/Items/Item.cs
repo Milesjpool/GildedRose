@@ -2,8 +2,9 @@
 {
     public abstract class Item
     {
-        public virtual string Name { get; set; }
-        public int SellIn { get; set; }
-        public int Quality { get; set; }
+        public abstract int SellIn { get; set; }
+        public abstract int Quality { get; set; }
+        public abstract void UpdateQuality();
+        public abstract void UpdateSellIn();
     }
 }
