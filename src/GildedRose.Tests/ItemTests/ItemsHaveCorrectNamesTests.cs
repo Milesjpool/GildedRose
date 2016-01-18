@@ -26,5 +26,12 @@ namespace GildedRose.Tests.ItemTests
             var elixirOfTheMongoose = new ElixirOfTheMongoose();
             Assert.That(elixirOfTheMongoose.Name, Is.EqualTo("Elixir of the Mongoose"));
         }
+
+        [Test]
+        public void SulfurasHandOfRagnaros_has_correct_name()
+        {
+            var elixirOfTheMongoose = new SulfurasHandOfRagnaros();
+            Assert.That(elixirOfTheMongoose.Name, Is.EqualTo("Sulfuras, Hand of Ragnaros"));
+        }
     }
 }

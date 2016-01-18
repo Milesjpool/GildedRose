@@ -16,7 +16,7 @@ namespace GildedRose.Console
                                               new Plus5DexterityVest {SellIn = 10, Quality = 20},
                                               new AgedBrie {SellIn = 2, Quality = 0},
                                               new ElixirOfTheMongoose {SellIn = 5, Quality = 7},
-                                              new SulfurasHandOfRagnoros {SellIn = 0, Quality = 80},
+                                              new SulfurasHandOfRagnaros {SellIn = 0, Quality = 80},
                                               new Item
                                                   {
                                                       Name = "Backstage passes to a TAFKAL80ETC concert",
@@ -109,10 +109,5 @@ namespace GildedRose.Console
             }
         }
 
-    }
-
-    public class SulfurasHandOfRagnoros : Item
-    {
-        public string Name { get { return "Sulfuras, Hand of Ragnaros";  } }
     }
 }
