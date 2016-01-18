@@ -40,5 +40,12 @@ namespace GildedRose.Tests.ItemTests
             var elixirOfTheMongoose = new ConjuredManaCake();
             Assert.That(elixirOfTheMongoose.Name, Is.EqualTo("Conjured Mana Cake"));
         }
+
+        [Test]
+        public void BackstagePassesToATAFKAL80ETCConcert_has_correct_name()
+        {
+            var elixirOfTheMongoose = new BackstagePassesToATAFKAL80ETCConcert();
+            Assert.That(elixirOfTheMongoose.Name, Is.EqualTo("Backstage passes to a TAFKAL80ETC concert"));
+        }
     }
 }
