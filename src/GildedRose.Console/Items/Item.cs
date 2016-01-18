@@ -1,6 +1,6 @@
 ﻿namespace GildedRose.Console.Items
 {
-    public class Item
+    public abstract class Item
     {
         public virtual string Name { get; set; }
         public int SellIn { get; set; }

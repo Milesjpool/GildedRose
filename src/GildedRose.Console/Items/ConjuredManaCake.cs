@@ -1,10 +1,8 @@
-﻿using GildedRose.Console.Items;
-
-namespace GildedRose.Console
+﻿namespace GildedRose.Console.Items
 {
     public class ConjuredManaCake : Item
     {
-        public string Name
+        public override string Name
         {
             get { return "Conjured Mana Cake"; }
         }
