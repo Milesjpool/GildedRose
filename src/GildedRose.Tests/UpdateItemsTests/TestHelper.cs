@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using GildedRose.Console;
+using GildedRose.Console.Items;
 
 namespace GildedRose.Tests.UpdateItemsTests
 {

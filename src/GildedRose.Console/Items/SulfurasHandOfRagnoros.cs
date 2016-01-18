@@ -1,7 +1,7 @@
-﻿namespace GildedRose.Console
+﻿namespace GildedRose.Console.Items
 {
     public class SulfurasHandOfRagnaros : Item
     {
-        public string Name { get { return "Sulfuras, Hand of Ragnaros";  } }
+        public override string Name { get { return "Sulfuras, Hand of Ragnaros"; } }
     }
 }

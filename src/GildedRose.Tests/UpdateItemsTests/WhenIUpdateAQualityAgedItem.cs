@@ -1,4 +1,5 @@
 using GildedRose.Console;
+using GildedRose.Console.Items;
 using NUnit.Framework;
 
 namespace GildedRose.Tests.UpdateItemsTests
