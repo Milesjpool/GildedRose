@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using GildedRose.Console;
-namespace GildedRose.Tests
+
+namespace GildedRose.Tests.UpdateItemsTests
 {
     public static class TestHelper
     {
