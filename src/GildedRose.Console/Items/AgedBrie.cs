@@ -1,9 +1,7 @@
-﻿using GildedRose.Console.Items;
-
-namespace GildedRose.Console
+﻿namespace GildedRose.Console.Items
 {
     public class AgedBrie : Item
     {
-        public string Name { get { return "Aged Brie"; } }
+        public override string Name { get { return "Aged Brie"; } }
     }
 }
