@@ -6,10 +6,10 @@ namespace GildedRose.Tests.UpdateItemsTests
 {
     public static class TestHelper
     {
-        public static Item UpdateQuality(this Item item)
+        public static Item UpdateItem(this Item item)
         {
             var program = new Program { Items = new List<Item> { item } };
-            program.UpdateQuality();
+            program.UpdateItem();
 
             return item;
         }

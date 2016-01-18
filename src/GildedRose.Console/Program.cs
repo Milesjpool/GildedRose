@@ -24,12 +24,12 @@ namespace GildedRose.Console
 
                           };
 
-            app.UpdateQuality();
+            app.UpdateItem();
 
             System.Console.ReadKey();
         }
 
-	    public void UpdateQuality()
+	    public void UpdateItem()
 	    {
 	        foreach (Item item in Items)
 	        {
