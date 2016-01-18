@@ -17,9 +17,8 @@ namespace GildedRose.Console
                                               new AgedBrie {SellIn = 2, Quality = 0},
                                               new ElixirOfTheMongoose {SellIn = 5, Quality = 7},
                                               new SulfurasHandOfRagnaros {SellIn = 0, Quality = 80},
-                                              new Item
+                                              new BackstagePassesToATAFKAL80ETCConcert
                                                   {
-                                                      Name = "Backstage passes to a TAFKAL80ETC concert",
                                                       SellIn = 15,
                                                       Quality = 20
                                                   },

@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BackstagePassesToATAFKAL80ETCConcert.cs" />
     <Compile Include="ConjuredManaCake.cs" />
     <Compile Include="Items\AgedBrie.cs" />
     <Compile Include="Items\ElixirOfTheMongoose.cs" />
