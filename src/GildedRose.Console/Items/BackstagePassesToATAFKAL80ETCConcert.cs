@@ -1,10 +1,8 @@
-﻿using GildedRose.Console.Items;
-
-namespace GildedRose.Console
+﻿namespace GildedRose.Console.Items
 {
     public class BackstagePassesToATAFKAL80ETCConcert : Item
     {
-        public string Name {
+        public override string Name {
             get { return "Backstage passes to a TAFKAL80ETC concert"; }
         }
     }
